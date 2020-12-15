@@ -1,0 +1,681 @@
+@font-face {
+    font-family: 'Josefin Sans Thin';
+    src: url('JosefinSans-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Ensemble page*/
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: url(office.png) no-repeat center fixed;
+    display: flex;
+    flex-flow: column;
+}
+
+
+
+/*Barre de Nav*/
+
+header{
+    display: flex;
+    background: rgb(251, 169, 11);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+}
+
+.nav-ul{
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    
+}
+
+#logo{
+    position: relative;
+    margin-top: 3vh;
+}
+
+
+
+#main_navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+
+}
+.hamburger:focus{
+    outline: none;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+li{
+    margin-right: 10px;
+    padding: 10px;
+    list-style-type: none;
+    
+    
+    
+}
+
+a {
+    text-decoration: none;
+    color: #1D5079;
+    font-family: 'Alex Brush';
+    
+}
+
+a:hover{
+    list-style-type: none;
+    color: red;
+
+}
+
+/*Corp*/
+
+.corp{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+section{
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+    background: rgb(200, 200, 200, 0.8);
+
+}
+
+#NomDebut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    margin: auto;
+    height: 100vh;
+   
+
+}
+
+#box{
+    
+    font-size: 3em;
+    font-family: cursive;
+    color: linear-gradient(#965858, #918d8d);
+    
+
+}
+
+h1  {
+    text-align: center;
+    font-family: 'Josefin Sans Thin';
+    
+}
+
+#dev{
+    font-family: 'Josefin Sans Thin';
+}
+
+h2{
+    text-align: center;
+    font-family: 'Josefin Sans Thin';
+}
+
+
+
+
+/*Portfolio*/
+#portfolio{
+    
+    background: rgb(251, 169, 11, 0.94);
+    border-radius: 5px;
+    height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+    margin: auto;
+    justify-content: space-around;
+    
+}
+
+#images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+/*Competences*/
+#competences{
+        
+    height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+    margin: auto;
+}
+
+.Bars{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+h3{
+    text-align: center;
+    margin-top: 20vh;
+}
+
+
+/*Bar HTML et CSS*/
+
+.progressBar{
+    width: 300px;
+    height: 24px;
+    padding: 4px;
+    background-color: #191919;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+}
+
+.progressBar::before{
+    content: '';
+    display: block;
+    width: 130px;
+    height: 24px;
+    background: #999;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+/*Bar JS*/
+
+.progressBar1{
+    width: 300px;
+    height: 24px;
+    padding: 4px;
+    background-color: #191919;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+}
+
+.progressBar1::before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 24px;
+    background: #999;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+/*Bar PHP*/
+
+.progressBar2{
+    width: 300px;
+    height: 24px;
+    padding: 4px;
+    background-color: #191919;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+}
+
+.progressBar2::before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 24px;
+    background: #999;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+/*Formations*/
+#formations{
+    
+    
+    height: 640px;
+    width: 100%;
+    margin-top: 50px;
+    margin: auto;
+}
+
+#propos{
+    margin-left: 28%;
+    margin-right: 28%;
+    text-align: center;
+    margin-top: 9%;
+}
+
+#a_propos{
+    
+    
+    height: 640px;
+    width: 100%;
+    margin-top: 50px;
+    margin: auto;
+}
+
+/*footer*/
+
+footer{
+    background: rgb(251, 169, 11);
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+}
+
+.fab{
+    
+    margin-right: 20px;
+}
+
+#copyright{
+    margin-right: 37%;
+}
+
+#copy{
+    text-align: center;
+}
+
+ 
+ 
+
+@media screen and (max-width:600px){
+
+
+    @font-face {
+        font-family: 'Josefin Sans Thin';
+        src: url('JosefinSans-VariableFont_wght.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    
+    /*Ensemble page*/
+    html{
+        height: 100%;
+        
+    }
+    
+    
+    body{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        background: url(office.png) no-repeat center fixed;
+        display: flex;
+        flex-flow: column;
+    }
+    
+    
+    
+    /*Barre de Nav*/
+    
+    header{
+        display: flex;
+        background: rgb(251, 169, 11);
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        position: fixed;
+    }
+    
+    
+    .nav-ul{
+        display: none;
+        flex-direction: column;
+    
+        
+    }
+    .nav-ul.show{
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    
+    #logo{
+        position: relative;
+        margin-top: 0;
+            
+    }
+    
+    
+    
+    #main_navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    ul{
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+
+
+    
+    li{
+        margin-right: 10px;
+        padding: 10px;
+        list-style-type: none;
+        
+        
+        
+        
+    }
+    
+    a {
+        text-decoration: none;
+        color: #1D5079;
+        font-family: 'Alex Brush';
+       
+        
+    }
+    
+    a:focus{
+        list-style-type: none;
+        color: red;
+    
+    }
+    
+    /*Corp*/
+    
+    .corp{
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+    }
+    
+    section{
+        display: flex;
+        flex-flow: column;
+        background: rgb(200, 200, 200, 0.8);
+    }
+    
+    #NomDebut{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        height: 100vh;
+    
+    }
+    
+    #box{
+        
+        font-size: 2em;
+        font-family: cursive;
+        color: linear-gradient(#965858, #918d8d);
+        
+    
+    }
+    
+    h1  {
+        text-align: center;
+        font-family: 'Josefin Sans Thin';
+        
+    }
+    
+    #dev{
+        font-family: 'Josefin Sans Thin';
+    }
+    
+    h2{
+        text-align: center;
+        font-family: 'Josefin Sans Thin';
+    }
+    
+    /*Portfolio*/
+    #portfolio{
+        
+        background: rgb(251, 169, 11, 0.94);
+        width: 100%;
+        height: 100vh;
+        
+    }
+    
+    #images{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        height: 90vh;
+        
+      
+    }
+        
+        img{
+            margin-bottom: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+    
+    
+    
+    
+    
+    
+    /*Competences*/
+    #competences{
+        
+        height: 100vh;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .Bars{
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+
+    }
+
+    h3{
+        margin: 5vh;
+    }
+    
+    /*Bar HTML et CSS*/
+    
+    .progressBar{
+        width: 300px;
+        height: 24px;
+        padding: 4px;
+        background-color: #191919;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+        -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+        -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    }
+    
+    .progressBar::before{
+        content: '';
+        display: block;
+        width: 130px;
+        height: 24px;
+        background: #999;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+        -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    }
+    
+    /*Bar JS*/
+    
+    .progressBar1{
+        width: 300px;
+        height: 24px;
+        padding: 4px;
+        background-color: #191919;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+        -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+        -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    }
+    
+    .progressBar1::before{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 24px;
+        background: #999;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+        -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    }
+    
+    /*Bar PHP*/
+    
+    .progressBar2{
+        width: 300px;
+        height: 24px;
+        padding: 4px;
+        background-color: #191919;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+        -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+        -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    }
+    
+    .progressBar2::before{
+        content: '';
+        display: block;
+        width: 50px;
+        height: 24px;
+        background: #999;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+        -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    }
+    
+    /*Formations*/
+    #formations{
+        
+        
+        height: 100vh;
+        width: 100%;
+        
+        margin: auto;
+    }
+    
+    #propos{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        
+    }
+    
+    #a_propos{
+        
+        
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin: auto;
+    }
+    
+    /*footer*/
+    
+    footer{
+        background: rgb(251, 169, 11);
+        position: fixed;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        flex-flow: row-reverse;
+        align-items: center;
+    }
+
+   
+    
+    .fab{
+        
+        margin-right: 20px;
+    }
+    
+    #copyright{
+        margin-right: 37%;
+    }
+    
+    #copy{
+        text-align: center;
+    }
+
+}

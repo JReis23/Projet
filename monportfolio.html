@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/monportfolio.css" media="screen">
+        <meta charset= "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://kit.fontawesome.com/7b54ad429c.js" crossorigin="anonymous"></script>
+        <title>Joao REIS / Portfolio / Web Devellopeur</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="main_navbar">
+            <div id="logo">
+                <img class=img-reponsive src="images/logojr1.png" alt="logo Joao Reis">
+            </div>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="#a_propos">A PROPOS</a></li>
+                <li><a href="#competences">COMPETENCES</a></li>
+                <li><a href="#formations">FORMATIONS</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal">CONTACT</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="container-fluid">
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                    <label for="email">Email address:</label>
+                                    <input type="email" class="form-control" placeholder="Enter email" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                                </div>
+                                <div class="form-group form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <div class="corp">
+
+        <section id="NomDebut">
+            <div id="box">
+                <h1 id="nom">Joao REIS</h1>
+                <p id="dev">Developpeur Web</p>
+            </div>
+
+    </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div id="images">
+            <img src="images/pic02.jpg">
+            <img src="images/pic04.jpg">
+            <img src="images/pic03.jpg">
+
+        </div>
+    </section>
+
+    <section id="competences">
+        <h2>Competences</h2>
+
+        <div class="Bars">
+            <div id="htmlcss">
+                <h3>HTML</h3>
+                <div class="progressBar"></div>
+
+                <h3>CSS</h3>
+                <div class="progressBar"></div>
+            </div>
+            <div id="jsphp">
+                <h3>JavaScript</h3>
+                <div class="progressBar1"></div>
+
+                <h3>PHP</h3>
+                <div class="progressBar2"></div>
+            </div>
+        </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="formations">
+        <h2>Formations</h2>
+
+    </section>
+
+    <section id="a_propos">
+        <h2>A Propos</h2>
+        <p id="propos">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </section>
+
+
+    </div>
+
+    <footer>
+        <a href="www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="www.linkidin.com"><i class="fab fa-linkedin fa-2x"></i></a>
+
+        <div id="copyright">
+            <p id="copy">Copyright</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="monportfolio.js"></script>
+
+</body>
+
+</html>
